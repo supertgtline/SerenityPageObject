@@ -89,7 +89,7 @@
                 <configuration>
                     <includes>
 
-                        <include>**/testcases/Parameterization.java</include>
+                        <include>**/testcases/FindCarTest.java</include>
                         <!-- <include>**/testcases/**/*.java</include> -->
                         <!--	<include>**/testcases/*.java</include> -->
 
