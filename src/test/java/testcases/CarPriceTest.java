@@ -31,6 +31,7 @@ public class CarPriceTest {
         car.navigate().findNewCars(brandName);
         car.findNameandPrice();
         Thread.sleep(3000);
+        car.updateCarPriceInFile("brandName");
     }
 
 }

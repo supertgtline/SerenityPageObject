@@ -95,7 +95,7 @@
                 <configuration>
                     <includes>
 
-                        <include>**/testcases/FindCarTest.java</include>
+                        <include>**/testcases/CarPriceTest.java</include>
                         <!-- <include>**/testcases/**/*.java</include> -->
                         <!--	<include>**/testcases/*.java</include> -->
 

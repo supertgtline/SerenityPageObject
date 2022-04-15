@@ -24,4 +24,8 @@ public class CarWaleSteps {
     public void findNameandPrice(){
         homePage.getCarNameAndPrice();
     }
+    @Step
+    public void updateCarPriceInFile(String fileName){
+        homePage.updateCarPriceInFile(fileName);
+    }
 }
