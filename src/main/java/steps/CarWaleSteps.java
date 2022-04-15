@@ -10,8 +10,9 @@ public class CarWaleSteps {
     HomePage homePage;
     NewCarsPage newCarsPage;
     @Step
-    public  void navigate(){
+    public  CarWaleSteps navigate(){
         homePage.open();
+        return this;
     }
     @Step
     public void findNewCars(String carBrand) throws InterruptedException {
@@ -19,5 +20,8 @@ public class CarWaleSteps {
           //      .chooseCarBrand(carBrand);
         newCarsPage.chooseCarBrand(carBrand);
        // Assert.assertTrue(homePage.getPageCarHeading().contains("Kia Car Models"));
+    }
+    public void findNameandPrice(){
+        homePage.getCarNameAndPrice();
     }
 }

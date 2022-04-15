@@ -72,4 +72,14 @@ public class BasePage extends PageObject {
     public String getPageCarHeading(){
         return getText(headingText);
     }
+    String carBrandName = "xpath=//h3[@class='o-jjpuv o-cVMLxW']";
+    String carPrice = "xpath=//span[@class='o-Hyyko o-cyHybq o-eZTujG o-eqqVmt']";
+    public void getCarNameAndPrice(){
+        List<WebElementFacade> carNames = getListElement(carBrandName);
+        List<WebElementFacade> carPrices = getListElement(carPrice);
+        for(int i = 0; i< carNames.size();i++){
+            System.out.println(carNames.get(i).getText()+" price í : "+carPrices.get(i).getText());
+        }
+
+    }
 }
