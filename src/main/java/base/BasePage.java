@@ -67,4 +67,9 @@ public class BasePage extends PageObject {
         WebElement moveTo = waitFor(getElement(locator));
         withAction().moveToElement(moveTo).perform();
     }
+
+    String headingText = "xpath=//h2[@class='o-fzpilz o-dAvrcB']";
+    public String getPageCarHeading(){
+        return getText(headingText);
+    }
 }
